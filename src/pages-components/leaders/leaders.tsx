@@ -35,8 +35,8 @@ export const Leaders = () => {
   }
 
   useEffect(() => {
-    fetch("https://love-tap-back.vercel.app/user/getLeaders/", {
-    // fetch("http://localhost:4000/user/getLeaders/", {
+    // fetch("https://love-tap-back.vercel.app/user/getLeaders/", {
+    fetch("http://localhost:4000/user/getLeaders/", {
       method: 'POST',
       headers: {
         'Access-Control-Allow-Origin': '*',

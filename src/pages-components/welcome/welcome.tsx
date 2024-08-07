@@ -90,8 +90,8 @@ export const WelcomePage = () => {
     if(initData?.user?.username != null){
       setUserName(initData?.user?.username); 
       setLoading(true);
-      fetch("https://love-tap-back.vercel.app/user/loginUser/", {
-      // fetch(":4000/user/loginUser/", {
+      // fetch("https://love-tap-back.vercel.app/user/loginUser/", {
+      fetch("http://localhost:4000/user/loginUser/", {
         method: 'POST',
         headers: {
           'Access-Control-Allow-Origin': '*',
