@@ -1,0 +1,1 @@
+ngrok http --domain=suited-prepared-hyena.ngrok-free.app 3000
