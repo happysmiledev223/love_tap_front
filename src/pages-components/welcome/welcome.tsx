@@ -63,8 +63,8 @@ export const WelcomePage = () => {
   };
 
   async function StoreTopPicK(){
-    fetch("https://love-tap-back.vercel.app/?womenId=" + id + "&id=" + userId, {
-    // fetch("http://localhost:4000/user/setTopPick/?womenId=" + id + "&id=" + userId, {
+    // fetch("https://love-tap-back.vercel.app/?womenId=" + id + "&id=" + userId, {
+    fetch("http://localhost:4000/user/setTopPick/?womenId=" + id + "&id=" + userId, {
       method: 'GET',
       headers: {
         'Access-Control-Allow-Origin': '*',
@@ -91,7 +91,7 @@ export const WelcomePage = () => {
       setUserName(initData?.user?.username); 
       setLoading(true);
       fetch("https://love-tap-back.vercel.app/user/loginUser/", {
-      // fetch("http://localhost:4000/user/loginUser/", {
+      // fetch(":4000/user/loginUser/", {
         method: 'POST',
         headers: {
           'Access-Control-Allow-Origin': '*',

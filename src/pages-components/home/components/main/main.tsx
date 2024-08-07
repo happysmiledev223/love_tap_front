@@ -209,8 +209,8 @@ export const Main = () => {
   }
 
   const updatePoints = useCallback(() => {
-    fetch("https://love-tap-back.vercel.app/user/updatePoints/", {
-    // fetch("http://localhost:4000/user/updatePoints/", {
+    // fetch("https://love-tap-back.vercel.app/user/updatePoints/", {
+    fetch("http://localhost:4000/user/updatePoints/", {
       method: 'POST',
       headers: {
         'Access-Control-Allow-Origin': '*',
