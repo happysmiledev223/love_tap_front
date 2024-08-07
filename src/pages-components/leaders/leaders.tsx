@@ -35,7 +35,7 @@ export const Leaders = () => {
   }
 
   useEffect(() => {
-    fetch("https://love-tap-telegram-mini-app-backend.vercel.app/user/getLeaders/", {
+    fetch("https://love-tap-back.vercel.app/user/getLeaders/", {
     // fetch("http://localhost:4000/user/getLeaders/", {
       method: 'POST',
       headers: {

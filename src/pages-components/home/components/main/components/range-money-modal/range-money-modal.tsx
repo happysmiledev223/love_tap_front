@@ -31,8 +31,8 @@ export const RangeMoneyModal = ({ open, close }: Props) => {
     if (step === "range") {
       setStep("points");
     } else {
-      // fetch("https://love-tap-telegram-mini-app-backend.vercel.app/user/bet/", {
-      fetch("http://localhost:4000/user/bet/", {
+      fetch("https://love-tap-back.vercel.app/user/bet/", {
+      // fetch("http://localhost:4000/user/bet/", {
         method: 'POST',
         headers: {
           'Access-Control-Allow-Origin': '*',

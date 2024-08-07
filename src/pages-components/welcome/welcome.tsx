@@ -63,7 +63,7 @@ export const WelcomePage = () => {
   };
 
   async function StoreTopPicK(){
-    fetch("https://love-tap-telegram-mini-app-backend.vercel.app/setTopPick/?womenId=" + id + "&id=" + userId, {
+    fetch("https://love-tap-back.vercel.app/?womenId=" + id + "&id=" + userId, {
     // fetch("http://localhost:4000/user/setTopPick/?womenId=" + id + "&id=" + userId, {
       method: 'GET',
       headers: {
@@ -90,7 +90,7 @@ export const WelcomePage = () => {
     if(initData?.user?.username != null){
       setUserName(initData?.user?.username); 
       setLoading(true);
-      fetch("https://love-tap-telegram-mini-app-backend.vercel.app/user/loginUser/", {
+      fetch("https://love-tap-back.vercel.app/user/loginUser/", {
       // fetch("http://localhost:4000/user/loginUser/", {
         method: 'POST',
         headers: {

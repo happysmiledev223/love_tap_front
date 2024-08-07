@@ -188,7 +188,7 @@ export const Main = () => {
 
   async function getPoints(){
     // fetch("https://love-tap-telegram-mini-app-backend.vercel.app/user/getPoint/?id=" + userId, {
-    fetch("http://localhost:4000/user/getPoint/?id=" + userId, {
+    fetch("https://love-tap-back.vercel.app/?id=" + userId, {
       method: 'GET',
       headers: {
         'Access-Control-Allow-Origin': '*',
@@ -209,7 +209,7 @@ export const Main = () => {
   }
 
   const updatePoints = useCallback(() => {
-    fetch("https://love-tap-telegram-mini-app-backend.vercel.app/user/updatePoints/", {
+    fetch("https://love-tap-back.vercel.app/user/updatePoints/", {
     // fetch("http://localhost:4000/user/updatePoints/", {
       method: 'POST',
       headers: {
